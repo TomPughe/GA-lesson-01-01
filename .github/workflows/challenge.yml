@@ -16,5 +16,5 @@ jobs:
     - name: Upload an arbitrary artifact
       uses: actions/upload-artifact@v1.0.0
       with:
-        name: ubuntu
+        name: linux
         path: ./${{ env.FILE_NAME }}
