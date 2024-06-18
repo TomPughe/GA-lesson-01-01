@@ -14,7 +14,7 @@ jobs:
       uses: actions/checkout@v1
 
     - name: Upload an arbitrary artifact
-      uses: actions/upload-artifact@v1.0.0
+      uses: actions/upload-artifact@v4.0.0
       with:
         name: linux
         path: ./${{ env.FILE_NAME }}
