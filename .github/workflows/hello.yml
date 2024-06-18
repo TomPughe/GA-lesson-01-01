@@ -8,8 +8,8 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       - name: Step one
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Setup Python environment
-        uses: actions/setup-python@v1.1.1
+        uses: actions/setup-python@v5
       - name: Step two
         run: python hello.py
