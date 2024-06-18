@@ -1,0 +1,15 @@
+name: hello
+
+on: push
+
+jobs:
+  test:
+      name: Test python
+      runs-on: ubuntu-latest
+      steps:
+      - name: Step one
+        uses: actions/checkout@v2
+      - name: Setup Python environment
+        uses: actions/setup-python@v1.1.1
+      - name: Step two
+        run: python hello.py
